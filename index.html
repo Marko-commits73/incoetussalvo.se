@@ -6,121 +6,228 @@
 <title>In Coetus Salvo</title>
 
 <style>
-
 body{
     margin:0;
     font-family:Georgia, serif;
     color:white;
     text-align:center;
-
-    background-image: url("bakrund (2).jpg");
+    background-image:url("bakrund (2).jpg");
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
 }
 
 .overlay{
-    background:rgba(0,0,0,0.45);
+    background:rgba(0,0,0,0.55);
     min-height:100vh;
-    padding:70px 20px;
+    padding:30px 20px 70px;
+}
+
+nav{
+    background:rgba(0,0,0,0.45);
+    padding:15px;
+    border-radius:14px;
+    max-width:1000px;
+    margin:0 auto 40px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
 }
 
 .logo{
-    width:220px;
+    width:170px;
     border-radius:50%;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 h1{
-    font-size:58px;
+    font-size:52px;
     margin-bottom:10px;
 }
 
 h2{
-    margin-top:60px;
-    font-size:34px;
+    font-size:32px;
+    margin-top:10px;
 }
 
 p{
-    font-size:22px;
+    font-size:21px;
     max-width:900px;
     margin:auto;
-    line-height:1.7;
+    line-height:1.65;
+}
+
+.buttons a{
+    display:inline-block;
+    margin:25px 10px;
+    padding:14px 24px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    text-decoration:none;
+    font-size:18px;
 }
 
 .box{
-    background:rgba(255,255,255,0.15);
-    max-width:900px;
-    margin:40px auto;
-    padding:35px;
+    background:rgba(255,255,255,0.14);
+    max-width:1000px;
+    margin:35px auto;
+    padding:30px;
     border-radius:18px;
     backdrop-filter:blur(6px);
 }
 
-footer{
-    margin-top:80px;
-    font-size:18px;
-    opacity:0.8;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:18px;
+    margin-top:25px;
 }
 
-</style>
+.card{
+    background:rgba(0,0,0,0.35);
+    padding:20px;
+    border-radius:14px;
+}
 
+.card h3{
+    margin-top:0;
+    font-size:23px;
+}
+
+.card p{
+    font-size:17px;
+}
+
+.soon{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 14px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.18);
+    font-size:15px;
+}
+
+footer{
+    margin-top:70px;
+    font-size:16px;
+    opacity:0.9;
+}
+
+footer a{
+    color:white;
+    margin:0 8px;
+}
+
+@media(max-width:600px){
+    h1{font-size:38px;}
+    p{font-size:18px;}
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+}
+</style>
 </head>
 
 <body>
-
 <div class="overlay">
-<img src="Logga.png" class="logo">
-<h1>In Coetus Salvo</h1>
 
-<p>
-Kunskap, berättelser och verktyg för vardag,
-natur och lärande.
-</p>
+<nav>
+    <a href="#hem">Hem</a>
+    <a href="#appar">Appar</a>
+    <a href="#bocker">Böcker</a>
+    <a href="#projekt">Projekt</a>
+    <a href="#om">Om oss</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
 
-<div class="box">
+<section id="hem">
+    <img src="Logga.png" class="logo" alt="In Coetus Salvo logga">
+    <h1>In Coetus Salvo</h1>
+    <p>Kunskap, berättelser och verktyg för vardag, natur och lärande.</p>
 
-<h2>Vår vision</h2>
+    <div class="buttons">
+        <a href="#appar">Utforska appar</a>
+        <a href="#bocker">Utforska böcker</a>
+    </div>
+</section>
 
-<p>
+<section id="appar" class="box">
+    <h2>Appar</h2>
+    <p>Vi utvecklar enkla och genomtänkta appar för natur, lärande, skrivande och vardagsnytta.</p>
 
-Vi vill skapa enkla, genomtänkta och hållbara
-digitala verktyg som hjälper människor att
-lära, upptäcka naturen, utveckla sin kreativitet
-och bevara kunskap.
+    <div class="cards">
+        <div class="card">
+            <h3>Fishcamper</h3>
+            <p>Fiske, vindskydd och naturstopp i Sverige.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
 
-Varje projekt byggs med fokus på kvalitet,
-lång livslängd och användarvänlighet.
+        <div class="card">
+            <h3>Digital Skrivbok</h3>
+            <p>Bokstavsträning och skrivövningar för barn.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
 
-</p>
+        <div class="card">
+            <h3>1001 Sagor</h3>
+            <p>Klassiska och egna sagor för läsning tillsammans.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
+    </div>
+</section>
 
-</div>
+<section id="bocker" class="box">
+    <h2>Böcker</h2>
+    <p>Här samlas våra bokserier och berättelser. Först ut är Oliver-serien med Blå Mussla.</p>
 
-<div class="box">
+    <div class="cards">
+        <div class="card">
+            <h3>Blå Mussla</h3>
+            <p>Oliver-serien, bok 1.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
 
-<h2>Kommande projekt</h2>
+        <div class="card">
+            <h3>Marcus Wrensk-serien</h3>
+            <p>Äventyr, ansvar och kamp i en hård värld.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
 
-<p>
+        <div class="card">
+            <h3>Tristan & Kristina</h3>
+            <p>Historiska berättelser under utveckling.</p>
+            <span class="soon">Kommer snart</span>
+        </div>
+    </div>
+</section>
 
-Våra första appar och digitala verktyg är under utveckling.
-De publiceras här efter hand som de blir färdiga.
+<section id="projekt" class="box">
+    <h2>Projekt</h2>
+    <p>In Coetus Salvo arbetar långsiktigt med digitala produkter, böcker, interaktiva äventyr och praktisk kunskap.</p>
+</section>
 
-</p>
+<section id="om" class="box">
+    <h2>Om In Coetus Salvo</h2>
+    <p>In Coetus Salvo skapar böcker, appar och digitala verktyg med fokus på kvalitet, lång livslängd, enkelhet och nytta. Projekten bygger på berättande, lärande, natur, kreativitet och vardagskunskap.</p>
+</section>
 
-</div>
+<section id="kontakt" class="box">
+    <h2>Kontakt</h2>
+    <p>För frågor om appar, böcker eller projekt: kontakt@incoetussalvo.se</p>
+</section>
 
 <footer>
-
-© 2026 In Coetus Salvo
-
+    © 2026 In Coetus Salvo<br>
+    <a href="privacy.html">Integritetspolicy</a>
+    <a href="terms.html">Användarvillkor</a>
 </footer>
 
 </div>
-
 </body>
-
-</html
-
-
-
-  
+</html>
