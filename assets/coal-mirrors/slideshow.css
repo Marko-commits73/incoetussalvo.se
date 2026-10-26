@@ -1,0 +1,12 @@
+
+.cm-feature{max-width:1000px;margin:42px auto;padding:30px 20px;background:rgba(8,8,8,.88);border:1px solid #9e8352;border-radius:16px;color:#fff;text-align:center;box-sizing:border-box}
+.cm-feature h2{font-family:Georgia,serif;font-size:clamp(29px,5vw,42px);margin:8px 0 12px;color:#e5ce9a}
+.cm-intro{font-size:18px!important;line-height:1.6!important;max-width:660px!important;margin:0 auto 22px!important}
+.cm-layout{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:30px;align-items:center;max-width:850px;margin:auto;text-align:left}
+.cm-stage{position:relative;aspect-ratio:9/16;background:#080808;overflow:hidden;border-radius:7px;isolation:isolate}
+.cm-slide{position:absolute;inset:0;margin:0}.cm-slide[hidden]{display:none!important}.cm-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.cm-caption{position:absolute;inset:auto 0 0;padding:100px 22px 46px;background:linear-gradient(transparent,rgba(0,0,0,.92));text-align:center;color:white;font-family:Arial,sans-serif;text-shadow:0 2px 6px #000}
+.cm-caption strong{display:block;font-size:clamp(20px,2.5vw,26px);line-height:1.25}.cm-caption span{display:block;font-size:clamp(15px,1.7vw,18px);line-height:1.4;margin-top:10px}
+.cm-controls{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:13px}.cm-controls button{font:16px Arial,sans-serif;min-width:44px;min-height:44px;padding:8px 12px;border:1px solid #887348;border-radius:5px;background:#171512;color:#fff;cursor:pointer}.cm-controls button:hover{background:#332c20}.cm-controls button:focus-visible,.cm-buy:focus-visible,.cm-stage:focus-visible{outline:3px solid #fff;outline-offset:4px}.cm-count{font:14px Arial,sans-serif;white-space:nowrap;color:#ddd}
+.cm-copy h3{font:26px Georgia,serif;color:#e5ce9a;margin:0 0 16px}.cm-copy p{font-size:19px!important;line-height:1.65!important;margin:0 0 22px!important}.cm-copy .cm-small{font-size:14px!important;color:#c8c5be;margin-top:18px!important}.cm-buy{display:inline-block;background:#d8bd80;color:#18130a!important;text-decoration:none;border-radius:6px;padding:15px 20px;font:bold 17px Arial,sans-serif}.cm-buy:hover{background:#f0dcae}
+@media(max-width:650px){.cm-layout{grid-template-columns:1fr;text-align:center;gap:24px}.cm-player{width:min(100%,380px);margin:auto}.cm-feature{padding:24px 14px}.cm-caption strong{font-size:23px}.cm-caption span{font-size:16px}}
