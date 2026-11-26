@@ -80,6 +80,7 @@ blockquote{margin:18px 0;padding:2px 0 2px 16px;border-left:3px solid var(--gold
 blockquote p{color:var(--text)}
 .link-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px;margin:22px 0 0;padding:0;list-style:none}
 .link-list a{color:var(--gold);font-weight:700}
+.image-tiles.image-tiles-two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .home-catalog{padding-top:10px;padding-bottom:70px}
 .home-catalog h2{font-size:clamp(29px,3.8vw,42px);margin-bottom:8px}
-@media(max-width:740px){.product-facts{grid-template-columns:1fr;gap:0 0}.product-facts dt{margin-top:10px}.link-list{grid-template-columns:1fr}.home-catalog{padding-bottom:48px}}
+@media(max-width:740px){.product-facts{grid-template-columns:1fr;gap:0 0}.product-facts dt{margin-top:10px}.link-list{grid-template-columns:1fr}.home-catalog{padding-bottom:48px}.image-tiles.image-tiles-two{grid-template-columns:1fr}}
