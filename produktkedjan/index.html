@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Produktkedjan · privat planering | In Coetus Salvo</title>
+<meta name="description" content="Privat planering för en fysisk produkt, från leverantör till Amazon och kund. Sidan indexeras inte.">
+<meta name="robots" content="noindex,nofollow">
+<!--
+  DOLD: Privat planering för sajtägaren. Inte i huvudmenyn, sidfoten på de publika sidorna, eller sitemap.xml.
+  Visningslåset i app.js är inte säkerhet. Det döljer bara innehållet i den här webbläsaren.
+-->
+<link rel="canonical" href="https://incoetussalvo.se/produktkedjan/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="In Coetus Salvo">
+<meta property="og:title" content="Produktkedjan · privat planering">
+<meta property="og:description" content="Privat planering. Sidan indexeras inte.">
+<meta property="og:url" content="https://incoetussalvo.se/produktkedjan/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body class="pk-page">
+<a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+<header class="header"><div class="wrap nav">
+<a class="brand" href="/"><img src="/assets/logo.webp" width="47" height="47" alt="In Coetus Salvo logotyp">IN COETUS SALVO</a>
+<nav class="menu" aria-label="Huvudmeny"><a href="/">Hem</a><a href="/bocker.html">Böcker</a><a href="/interaktiva-aventyr.html">Äventyr</a><a href="/blogg/index.html">Blogg</a><a href="/om-oss.html">Om oss</a><a href="/kontakt.html">Kontakt</a></nav>
+</div></header>
+<main id="innehall">
+<section class="pageintro">
+  <div class="wrap">
+    <p class="eyebrow">Privat planering</p>
+    <h1>Produktkedjan</h1>
+    <p class="lead">Planera vägen från leverantör till Amazon och vidare till kund. Allt stannar i den här webbläsaren tills du exporterar en fil. Sidan finns inte i menyn.</p>
+  </div>
+</section>
+<section class="section pk">
+  <div class="wrap">
+    <noscript><p>Produktkedjan behöver JavaScript. Inget skickas till en server.</p></noscript>
+    <div id="pk-gate" hidden></div>
+    <div id="pk-tool" hidden>
+      <div class="pk-toolbar">
+        <div>
+          <p id="pk-current-name" class="pk-current">Inget arbetsnamn ännu</p>
+          <p id="pk-save" class="pk-save">Sparas i den här webbläsaren</p>
+        </div>
+        <div class="pk-toolbar-actions">
+          <button type="button" class="btn pk-small" id="pk-export">Exportera</button>
+          <button type="button" class="btn secondary pk-small" id="pk-import-btn">Importera</button>
+          <input id="pk-import" class="pk-file" type="file" accept="application/json,.json" aria-label="Välj JSON-fil att importera">
+          <a class="btn secondary pk-small" href="#/installningar">Inställningar</a>
+        </div>
+      </div>
+      <div id="pk-alert" class="pk-banner" role="alert" hidden></div>
+      <div id="pk-status" class="pk-banner" role="status" hidden></div>
+      <div id="pk-corrupt" class="pk-banner" hidden></div>
+      <div class="pk-shell">
+        <div>
+          <div class="pk-jump">
+            <label class="pk-field" for="pk-jump"><span class="pk-label">Gå till</span>
+              <select id="pk-jump"></select>
+            </label>
+          </div>
+          <nav id="pk-nav" class="pk-nav" aria-label="Steg i produktkedjan"></nav>
+        </div>
+        <div id="pk-view"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footer-grid">
+<div><strong class="footer-name">PRODUKTKEDJAN</strong><small>Privat planering · sparas i webbläsaren</small></div>
+<div class="footer-links"><a href="/">Till webbplatsen</a></div>
+</div><div class="wrap copyright">© 2026 In Coetus Salvo · Marko Luttinen</div></footer>
+<dialog id="pk-dialog" aria-labelledby="pk-dialog-title">
+  <form method="dialog">
+    <h2 id="pk-dialog-title"></h2>
+    <p id="pk-dialog-body"></p>
+    <div class="pk-dialog-actions">
+      <button type="submit" class="btn secondary pk-small" value="cancel">Avbryt</button>
+      <button type="submit" class="btn pk-small" id="pk-dialog-ok" value="ok">Fortsätt</button>
+    </div>
+  </form>
+</dialog>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
